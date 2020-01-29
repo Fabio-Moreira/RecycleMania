@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: a674904f844b3634d83757e6733eb381
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Spawn: {fileID: 2665871961604259091, guid: 81c7bd8e28b6d44459e0f87fb5304f93, type: 3}
+  - Bio: {fileID: 902471034811804042, guid: 87eb59ff1782cb24ca170a05e0ca6b3f, type: 3}
+  - Black: {fileID: 911170846478911993, guid: 78705ad7751b59c49b57a12e52bc3974, type: 3}
+  - Electronics: {fileID: 6515958668752329696, guid: 5aee2760ebbe5a44ebb000717a414ac2,
+      type: 3}
+  - Glass: {fileID: 665731846205693173, guid: e556be1fbfa3cc0459570ca35461bba8, type: 3}
+  - Metal: {fileID: 8615437447924017940, guid: 2902641a04eee264084bf973662465cb, type: 3}
+  - Paper: {fileID: 5363559761812696243, guid: 59badf9aa7ca6e548ba1a0e023577fa5, type: 3}
+  - Plastic: {fileID: 7130505043232902960, guid: b3ff67f4774572040a5dbfc07fe0db23,
+      type: 3}
+  - BinBio: {fileID: 6583150081524200712, guid: 863c9b5e5b939054582cf6c659f79e8a,
+      type: 3}
+  - BinBlack: {fileID: 911170846478911993, guid: 78705ad7751b59c49b57a12e52bc3974,
+      type: 3}
+  - BinElectronics: {fileID: 6515958668752329696, guid: 5aee2760ebbe5a44ebb000717a414ac2,
+      type: 3}
+  - BinGlass: {fileID: 4394423596751782036, guid: d039b9718f8ad864287fd85d1a3e2c29,
+      type: 3}
+  - BinMetal: {fileID: 3141327637709140880, guid: dedefee2356b8cb4bba2453d668ce2c7,
+      type: 3}
+  - BinPaper: {fileID: 3980614747224911996, guid: a943476b9c722ee4baa0274a423f8591,
+      type: 3}
+  - BinPlastic: {fileID: 8931181932286527172, guid: 5f456dccda485a141ba55c4d21a397dc,
+      type: 3}
+  - textPoints: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
