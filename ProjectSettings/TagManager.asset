@@ -4,14 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Trash
-  - Bio
-  - Black
-  - Electronics
-  - Glass
-  - Metal
-  - Paper
-  - Plastic
+  - Blue
+  - Cyan
+  - Green
+  - Gray
+  - Magenta
+  - Orange
   layers:
   - Default
   - TransparentFX
@@ -21,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - Trash
+  - Candy
   - 
   - 
   - 
