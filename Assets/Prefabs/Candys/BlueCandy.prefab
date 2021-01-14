@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1771322705845586565}
   - component: {fileID: -7797932751422499383}
   - component: {fileID: 1119980699113420681}
+  - component: {fileID: 3389879244922174607}
   m_Layer: 8
   m_Name: BlueCandy
   m_TagString: Blue
@@ -83,7 +84,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!95 &1771322705845586565
 Animator:
@@ -141,3 +142,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.38
+--- !u!114 &3389879244922174607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771322705845586570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 641c3f7bef78814498d4b1b41da2b19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

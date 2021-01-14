@@ -2,136 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25d5f603-6326-432f-a217-3c9e0ef10a9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Bakgrund.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Bakgrund.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Logo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/cropped-bts-gpgd-2-lines-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/cropped-bts-gpgd-2-lines-1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Help.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Help.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs/AutoCreateBorderCam.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs/AutoCreateBorderCam.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs/AutoSeekCameras.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs/AutoSeekCameras.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs/BoxLogo_Horns.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs/BoxLogo_Horns.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs/CreatePic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs/CreatePic.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs/CustomBorderCam.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs/CustomBorderCam.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs/FinAllCameras.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs/FinAllCameras.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs/Setup.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs/Setup.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs/mug.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Documentation/Imgs/mug.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Editor/ForceCameraRatioEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/Editor/ForceCameraRatioEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/ForceCameraRatio.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Auto Letterbox/ForceCameraRatio.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bins/BioBin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bins/BioBin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bins/BlackBin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bins/BlackBin.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bins/ElectronicsBin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bins/ElectronicsBin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bins/GlassBin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bins/GlassBin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bins/MetalBin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bins/MetalBin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bins/PaperBin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bins/PaperBin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bins/PlasticBin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bins/PlasticBin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu/BioBin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu/BioBin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu/BlackBin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu/BlackBin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu/BlackVertical.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu/BlackVertical.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu/ElectronicsBin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu/ElectronicsBin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu/GlassBin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu/GlassBin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu/MetalBin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu/MetalBin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu/PaperBin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu/PaperBin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu/PlasticBin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BinsMenu/PlasticBin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Trash.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Trash/Bio.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Trash/Bio.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Trash/Black.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Trash/Black.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Trash/Electronics.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Trash/Electronics.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Trash/Glass.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Trash/Glass.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Trash/Metal.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Trash/Metal.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Trash/Paper.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Trash/Paper.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Trash/Plastic.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Trash/Plastic.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RecycleMania/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecycleMania/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RecycleMania/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecycleMania/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Background.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Background.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Belt.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Belt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Belt.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Belt.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Spawn.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Spawn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Trash.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Trash/Bio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Trash/Bio.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Trash/Black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Trash/Black.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Trash/Electronics.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Trash/Electronics.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Trash/Glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Trash/Glass.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Trash/Metal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Trash/Metal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Trash/Paper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Trash/Paper.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Trash/Plastic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Trash/Plastic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/arrow1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/arrow1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candys/BlueCandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candys/BlueCandy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candys/CyanCandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candys/CyanCandy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candys/GreenCandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candys/GreenCandy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candys/GreyCandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candys/GreyCandy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candys/MagentaCandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candys/MagentaCandy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candys/OrangeCandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candys/OrangeCandy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AnimationScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AnimationScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Account.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Account/Achievements.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Account/Achievements.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Account/BinTypes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Account/BinTypes.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Account/JsonToken.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Account/JsonToken.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Account/LoginJson.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Account/LoginJson.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Account/RegisterJson.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Account/RegisterJson.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Account/Save.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Account/Save.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Account/User.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Account/User.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Bin.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Bin.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Game.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Trash.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Trash.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameInstance.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameInstance.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameMenu/GameMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameMenu/GameMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/AboutMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/AboutMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/FirstMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/FirstMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/FirstScreen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/FirstScreen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/LoginMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/LoginMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuOptions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/OfflineManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/OfflineManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/OfflineMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/OfflineMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/OnlineManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/OnlineManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/RegisterMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/RegisterMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScripts/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameScripts/Spawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScripts/TransportBelt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameScripts/TransportBelt.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +58,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameScripts/TransportBelt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameScripts/Bins.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameScripts/Interfaces.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameScripts/Candy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -166,12 +71,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Interfaces.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Bin.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Spawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/UI/UserInterface.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/UI/PauseMenu.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/TransportBelt.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Game.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Bins.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Candy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Spawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/TransportBelt.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mvaPJDEotDpD7YSHidoY6jlIA6" />
@@ -243,6 +149,9 @@
       <workItem from="1610572608821" duration="1488000" />
       <workItem from="1610575415268" duration="425000" />
       <workItem from="1610575942980" duration="2192000" />
+      <workItem from="1610633267676" duration="2565000" />
+      <workItem from="1610641447065" duration="2709000" />
+      <workItem from="1610644227318" duration="1552000" />
     </task>
     <servers />
   </component>

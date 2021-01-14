@@ -43,8 +43,9 @@ public class Spawner : MonoBehaviour
 
             var type = Random.Range(0, candyObjects.Length);
 
-            var rb2d = Instantiate(candyObjects[type], pos, Quaternion.identity).GetComponent<Rigidbody2D>();
-            rb2d.velocity = new Vector2(0, game.transportBelt.GetCurrentSpeed());
+            var obj = Instantiate(candyObjects[type], pos, Quaternion.identity);
+            var candy = obj.GetComponent<Candy>();
+            candy.game = this.game;
             
             IncreaseDifficulty();
             currentSpawnTick = _SPAWNTICK  - currentTickDifficulty;

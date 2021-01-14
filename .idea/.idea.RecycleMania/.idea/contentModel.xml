@@ -13,6 +13,7 @@
           <e p="GameScripts" t="Include">
             <e p="Bin.cs" t="Include" />
             <e p="Bins.cs" t="Include" />
+            <e p="Candy.cs" t="Include" />
             <e p="Enums" t="Include">
               <e p="Achievements.cs" t="Include" />
             </e>

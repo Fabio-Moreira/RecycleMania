@@ -473,6 +473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 314232079}
   - component: {fileID: 314232080}
+  - component: {fileID: 314232081}
   m_Layer: 0
   m_Name: Room
   m_TagString: Untagged
@@ -516,6 +517,55 @@ MonoBehaviour:
   spawner: {fileID: 1433622906}
   bins: {fileID: 911315344}
   transportBelt: {fileID: 1623363111}
+--- !u!331 &314232081
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314232078}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 50b5756a497f86f409c1ad166f8fa684, type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &352276157
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,7 +914,7 @@ Transform:
   m_GameObject: {fileID: 467460892}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.0028, y: 0.0011, z: 0}
-  m_LocalScale: {x: 0.521, y: 0.521, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 314232079}
   m_RootOrder: 1
@@ -907,7 +957,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 50b5756a497f86f409c1ad166f8fa684, type: 3}
   m_Color: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   m_FlipX: 0
@@ -1053,7 +1103,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.59
+  orthographic size: 5.397196
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2534,16 +2584,16 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 412b85dfd602cc047aca7b9ac62fb2a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.6, y: 16.41}
-  m_AdaptiveModeThreshold: 0.5
+  m_Size: {x: 8.599999, y: 28.22564}
+  m_AdaptiveModeThreshold: 0.324
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1623363111
@@ -2558,8 +2608,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc26bd8faf6c72340ad39795672f2f7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 2
-  speedIncreaseSteps: 0.2
+  transportBeltPrefab:
+  - {fileID: 4115812831390872381, guid: a8113bdb7a19820429144bf26c189b08, type: 3}
+  - {fileID: 7852836644109195964, guid: 3d8fd41fe0c134a4f9bd664896fe0f44, type: 3}
+  - {fileID: 3338002678647368714, guid: baf74fc5d7ca98941b51a29be12d0601, type: 3}
+  - {fileID: 4991135452326012597, guid: 3fd7d8df301ef364e92643c471bcdccd, type: 3}
+  - {fileID: 7851310690391825296, guid: 24bc265d2c5c9fb4fbfb659bd104a8f3, type: 3}
+  - {fileID: 4260559453500841692, guid: 904d380ac999aeb4eab559ed8be41ee5, type: 3}
+  - {fileID: 5934008086905614172, guid: a3cb12c09b8bfe74899c8a37a3d8901b, type: 3}
+  - {fileID: 4638832477628513387, guid: 3fa849d71269f1f439b1ed7b31059ea9, type: 3}
+  - {fileID: 8543892702486470509, guid: 1d342f27f31c6ab4aafee3c9ccb6b7ed, type: 3}
+  - {fileID: 7448658780905029471, guid: 109c22dc95db37241bfc622d3de530ab, type: 3}
+  - {fileID: 1035914509128464747, guid: d7fbcfba58ad0ce4e95afafc717fc7fc, type: 3}
+  startSpeed: 1.5
+  speedIncreaseSteps: 0.1
   speedIncreaseTick: 5
   maximumFallSpeed: 5.8
 --- !u!1 &1910167749
