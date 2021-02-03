@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace GameScripts
@@ -35,12 +36,6 @@ namespace GameScripts
         //needed to award points and remove lives
         public Game game { set; private get; }
 
-        // Start is called before the first frame update
-        private void Start()
-        {
-            
-        }
-
         private void Update()
         {
             Swap();
@@ -52,9 +47,9 @@ namespace GameScripts
             if (firstSwap == -1)
             {
                 string empty = "";
-                foreach (var VARIABLE in binSwitchText)
+                foreach (var variable in binSwitchText)
                 {
-                    VARIABLE.text = empty;
+                    variable.text = empty;
                 }
             }
             else
@@ -68,15 +63,17 @@ namespace GameScripts
         {
             if (bins.Length > 0)
             {
-                foreach (var VARIABLE in bins)
+                foreach (var variable in bins)
                 {
-                    Destroy(VARIABLE);
+                    Destroy(variable);
                 }
             }
             
             for (var index = 0; index < binsPositions.Length; index++)
             {
-                bins[index] = Instantiate(binsPrefabs[index], binsPositions[index].transform.position, Quaternion.identity);
+                bins[index] = Instantiate(binsPrefabs[index], Vector3.zero, Quaternion.identity);
+                bins[index].transform.parent = binsPositions[index].transform;
+                bins[index].transform.localPosition = Vector3.zero;
                 bins[index].GetComponent<Bin>().game = game;
                 
             }
@@ -112,8 +109,12 @@ namespace GameScripts
                 }
                 else
                 {
-                    SwapBins();
-                    //UpdateSwapText();
+                    if ((countDown -= Time.deltaTime) <= 0)
+                    {
+                        SwapBins();
+                        DifficultyIncrease();
+                        countdownSwitch = switchInterval;
+                    }
                 }
             }
         }
@@ -121,25 +122,21 @@ namespace GameScripts
         private void SwapBins()
         {
             if (firstSwap != -1)
-                if ((countDown -= Time.deltaTime) <= 0)
-                {
-                    var temp1GO = bins[firstSwap];
-                    var temp1Pos = temp1GO.transform.position;
-                    var temp2GO = bins[secondSwap];
-                    var temp2Pos = temp2GO.transform.position;
+            {
+                var binOne = bins[firstSwap];
+                var binTwo = bins[secondSwap];
 
-                    bins[firstSwap] = temp2GO;
-                    temp2GO.transform.position = temp1Pos;
+                binOne.transform.parent = binsPositions[secondSwap].transform;
+                binOne.transform.localPosition = Vector3.zero;
+                binTwo.transform.parent = binsPositions[firstSwap].transform;
+                binTwo.transform.localPosition = Vector3.zero;
+                
+                bins[firstSwap] = binTwo;
+                bins[secondSwap] = binOne;
 
-                    bins[secondSwap] = temp1GO;
-                    temp1GO.transform.position = temp2Pos;
-
-                    DifficultyIncrease();
-                    countdownSwitch = switchInterval;
-
-                    firstSwap = -1;
-                    secondSwap = -1;
-                }
+                firstSwap = -1;
+                secondSwap = -1;
+            }
         }
     }
 }

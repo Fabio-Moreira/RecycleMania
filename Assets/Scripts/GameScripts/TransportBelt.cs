@@ -7,8 +7,11 @@ namespace GameScripts
     {
         [Header("GameObjects")]
         [SerializeField, Tooltip("Transport belt prefabs to it look different each play through")]
-        private GameObject[] transportBeltPrefab;
-        private LinkedList<Rigidbody2D> transportBelts = new LinkedList<Rigidbody2D>();
+        private GameObject transportBeltPrefab;
+        [SerializeField, Tooltip("Sprites to change when the belt piece is moved up, makes a better illusion of movement")]
+        private Sprite[] beltSprites;
+        private readonly LinkedList<Rigidbody2D> rb2dTransportBelts = new LinkedList<Rigidbody2D>();
+        private readonly LinkedList<SpriteRenderer> spriteRendererTransportBelts = new LinkedList<SpriteRenderer>();
         private int nextRandomColouredBelt=0;
 
         
@@ -35,19 +38,22 @@ namespace GameScripts
 
         public void SetupTransportBelt()
         {
-            foreach (var VARIABLE in transportBelts)
+            foreach (var variable in rb2dTransportBelts)
             {
-                Destroy(VARIABLE.gameObject);
+                Destroy(variable.gameObject);
             }
-            transportBelts.Clear();
+            rb2dTransportBelts.Clear();
+            spriteRendererTransportBelts.Clear();
                 
             currentSpeed = -startSpeed;
             currentIncreaseTick = speedIncreaseTick;
             
-            for (int i=0; i<10; i++)
+            for (var i=0; i<10; i++)
             {
-                var go = Instantiate(transportBeltPrefab[12], new Vector3(0, -4.9f + i * 1.13f, 0), Quaternion.identity).GetComponent<Rigidbody2D>();
-                transportBelts.AddLast(go);
+                var go = Instantiate(transportBeltPrefab, new Vector3(0, -4.9f + i * 1.13f, 0), Quaternion.identity);
+                go.transform.parent = gameObject.transform;
+                rb2dTransportBelts.AddLast(go.GetComponent<Rigidbody2D>());
+                spriteRendererTransportBelts.AddLast(go.GetComponent<SpriteRenderer>());
             }
             
         }
@@ -60,11 +66,12 @@ namespace GameScripts
 
         private void MoveBelt()
         {
-            if (transportBelts.First.Value.position.y <= -5f)
+            if (rb2dTransportBelts.First.Value.position.y <= -5f)
             {
-                var firstTemp = transportBelts.First.Value.gameObject;
-                transportBelts.RemoveFirst();
-                Destroy(firstTemp);
+                var toMoveUpRigidbody2D = rb2dTransportBelts.First.Value;
+                var toMoveUpSpriteRenderer = spriteRendererTransportBelts.First.Value;
+                rb2dTransportBelts.RemoveFirst();
+                spriteRendererTransportBelts.RemoveFirst();
 
                 var random = 12;
                 if (nextRandomColouredBelt-- == 0)
@@ -73,13 +80,15 @@ namespace GameScripts
                     random = Random.Range(0, 11);
                 }
                 
-                var posLast = transportBelts.Last.Value.position.y;
-                var go = Instantiate(transportBeltPrefab[random], new Vector3(0, posLast + 1.13f, 0), Quaternion.identity).GetComponent<Rigidbody2D>();
-                transportBelts.AddLast(go);
+                var posLast = rb2dTransportBelts.Last.Value.position.y;
+                toMoveUpRigidbody2D.position = new Vector3(0, posLast + 1.13f, 0);
+                toMoveUpSpriteRenderer.sprite = beltSprites[random];
+                rb2dTransportBelts.AddLast(toMoveUpRigidbody2D);
+                spriteRendererTransportBelts.AddLast(toMoveUpSpriteRenderer);
             }
             
             var tmpVel = new Vector2(0, currentSpeed);
-            foreach (var tmp in transportBelts)
+            foreach (var tmp in rb2dTransportBelts)
             {
                 tmp.velocity = tmpVel;
             }

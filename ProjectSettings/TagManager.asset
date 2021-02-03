@@ -10,6 +10,7 @@ TagManager:
   - Gray
   - Magenta
   - Orange
+  - Bad
   layers:
   - Default
   - TransparentFX

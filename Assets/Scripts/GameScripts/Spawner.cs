@@ -39,7 +39,7 @@ public class Spawner : MonoBehaviour
         {
             var pos = gameObject.transform.position;
             pos.x += Random.Range(-1.6f, 1.6f);
-            pos.y += 2f;
+            pos.y += 0.5f;
 
             var type = Random.Range(0, candyObjects.Length);
 

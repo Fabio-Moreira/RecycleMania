@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace GameScripts
+namespace GameScripts.UI
 {
-    public class UserInterface : MonoBehaviour, IObserver<string,int>
+    public class UserInterface : MonoBehaviour
     {
         [Header("Scripts")] [SerializeField] [Tooltip("Needed to pause game and get points")]
         private Game game;
@@ -16,39 +16,25 @@ namespace GameScripts
 
         [Header("Control buttons")] [SerializeField] [Tooltip("Button to open pause menu")]
         private Button pauseButton;
-        [SerializeField, Tooltip("Pause panel needed to display and hide it")]
-        private GameObject pauseMenu;
+        
         private void Awake()
         {
             pauseButton.onClick.AddListener(PauseControl);
-            game.Subscribe(this);
         }
 
         private void PauseControl()
         {
-            if (game.Paused)
-            {
-                pauseMenu.SetActive(false);
-                game.ContinueGame();
-            }
-            else
-            {
-                pauseMenu.SetActive(true);
-                game.PauseGame();
-            }
+            game.PauseGame();
         }
 
-        public void UpdateObserver(string param, int value)
+        public void UpdatePoints(int currentPoints)
         {
-            switch (param)
-            {
-                case "Points":
-                    pointsText.text = "Points: " + value;
-                    break;
-                case "Lives":
-                    livesText.text = "Lives: " + value;
-                    break;
-            }
+            pointsText.text = currentPoints.ToString();
+        }
+
+        public void UpdateLives(int currentLives)
+        {
+            livesText.text = currentLives.ToString();
         }
     }
 }

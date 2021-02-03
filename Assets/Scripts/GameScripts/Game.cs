@@ -1,18 +1,10 @@
-﻿using System;
+﻿using GameScripts.UI;
 using UnityEngine;
 
 namespace GameScripts
 {
-    public class Game : MonoBehaviour, IObservable<string, int>
+    public class Game : MonoBehaviour
     {
-        [Header("Starting Settings")]
-        [SerializeField]
-        [Tooltip("Speed at which the Candy falls at the start of the game")]
-        private float speed;
-
-        [SerializeField] [Tooltip("Time between increase in speed")]
-        public int speedTick;
-
         [Header("GameObjects")] [SerializeField] [Tooltip("Spawner needs game for speed")]
         private Spawner spawner;
 
@@ -22,18 +14,26 @@ namespace GameScripts
         [SerializeField] [Tooltip("Transport belt is responsible for the speed at which candy falls")]
         public TransportBelt transportBelt;
 
-        //Points tracking
+        [SerializeField] [Tooltip("UserInterface needed to update points, lives and to pause the game")]
+        private UserInterface userInterface;
+
+        [SerializeField] [Tooltip("Needed to remove PauseMenu and reset the game")]
+        private PauseMenu pauseMenu;
+
+        //lives tracking of current game
         private int lives;
-
-        private Camera mainCamera;
-
+        //points tracking of current game
         private int points;
+
+        //mainCamera needed for screenToWorldPoint for mouse input
+        private Camera mainCamera;
 
         //Candy currently being controlled by the player
         private Rigidbody2D selectedCandy;
+        //difference of MousePosition to selectedCandy, avoid the candy getting centered to mouse and unexpected candy movements
+        private Vector2 deltaMouseCandy;
 
-        private IObserver<string, int> userInterface;
-
+        //needed to avoid input while game is paused
         public bool Paused { private set; get; }
 
         // Start is called before the first frame update
@@ -51,41 +51,24 @@ namespace GameScripts
 
         private void Update()
         {
-            MouseInput();
+            CandyMoving();
         }
-
-        private void FixedUpdate()
+        
+        private void CandyMoving()
         {
-            
-        }
-
-        public void Subscribe(IObserver<string, int> o)
-        {
-            userInterface = o;
-        }
-
-        public void Notify(string param, int value)
-        {
-            userInterface.UpdateObserver(param,value);
-        }
-
-
-        private void MouseInput()
-        {
+            if (Paused) return;
             if (Input.GetMouseButtonDown(0))
             {
-                var mousePos = Input.mousePosition;
-
-                Vector2 v2 = mainCamera.ScreenToWorldPoint(mousePos);
+                Vector2 v2 = mainCamera.ScreenToWorldPoint(Input.mousePosition);
                 var hit = Physics2D.CircleCast(v2, 0.3f, Vector2.zero);
                 if (!hit.collider || hit.collider.gameObject.layer != 8) return;
                 selectedCandy = hit.collider.gameObject.GetComponent<Rigidbody2D>();
+                deltaMouseCandy = v2 - selectedCandy.position;
                 selectedCandy.velocity = Vector2.zero;
             }
             else if (Input.GetMouseButtonUp(0))
             {
                 if (!selectedCandy) return;
-                Vector2 v2 = mainCamera.ScreenToWorldPoint(Input.mousePosition);
                 selectedCandy.velocity = new Vector2(0, transportBelt.GetCurrentSpeed());
                 selectedCandy = null;
             }
@@ -93,40 +76,45 @@ namespace GameScripts
             {
                 if (!selectedCandy) return;
                 Vector2 v2 = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-                selectedCandy.gameObject.transform.position = new Vector3(v2.x, v2.y, 0);
+                selectedCandy.gameObject.transform.position = new Vector3(v2.x-deltaMouseCandy.x, v2.y-deltaMouseCandy.y, 0);
             }
         }
 
         public void AddPoints()
         {
-            ++points;
-            Notify("Points",points);
+            userInterface.UpdatePoints(++points);
         }
 
         public void LoseLive()
         {
-            --lives;
-            Notify("Lives",lives);
+            if (--lives == 0)
+            {
+                Time.timeScale = 0;
+                pauseMenu.SetResetMenu();
+            }
+            userInterface.UpdateLives(lives);
         }
 
         public void PauseGame()
         {
-            Paused = true;
             Time.timeScale = 0;
+            pauseMenu.SetActive(true);
+            Paused = true;
         }
 
         public void ContinueGame()
         {
-            Paused = false;
             Time.timeScale = 1;
+            pauseMenu.SetActive(false);
+            Paused = false;
         }
 
         public void StartGame()
         {
             points = 0;
-            Notify("Points",points);
+            userInterface.UpdatePoints(points);
             lives = 3;
-            Notify("Lives",lives);
+            userInterface.UpdateLives(lives);
             Paused = false;
             Time.timeScale = 1;
             transportBelt.SetupTransportBelt();

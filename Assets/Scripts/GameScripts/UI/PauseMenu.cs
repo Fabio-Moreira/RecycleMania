@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace GameScripts
+namespace GameScripts.UI
 {
     public class PauseMenu : MonoBehaviour
     {
@@ -15,22 +15,34 @@ namespace GameScripts
         private Game game;
         
         // Start is called before the first frame update
-        void Start()
+        private void Awake()
         {
-            continueButton.onClick.AddListener(continueGame);
-            restartButton.onClick.AddListener(restartGame);
+            continueButton.onClick.AddListener(ContinueGame);
+            restartButton.onClick.AddListener(RestartGame);
         }
 
-        private void continueGame()
+        private void ContinueGame()
         {
             game.ContinueGame();
-            this.gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
 
-        private void restartGame()
+        private void RestartGame()
         {
             game.StartGame();
-            this.gameObject.SetActive(false);
+            gameObject.SetActive(false);
+            continueButton.interactable = true;
+        }
+
+        public void SetActive(bool active)
+        {
+            gameObject.SetActive(active);
+        }
+
+        public void SetResetMenu()
+        {
+            gameObject.SetActive(true);
+            continueButton.interactable = false;
         }
     }
 }

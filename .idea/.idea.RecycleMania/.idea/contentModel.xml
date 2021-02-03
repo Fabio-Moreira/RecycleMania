@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\morfa\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\morfa\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_RecycleMania.1089223244.00" t="ExcludeRecursive" />
-    <e p="C:\Users\morfa\Desktop\RecycleMania" t="IncludeRecursive">
+    <e p="C:\Users\morfa\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_RecycleMania.1449910209.00" t="ExcludeRecursive" />
+    <e p="C:\Users\morfa\Documents\Unity\RecycleMania" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="GameMenu" t="Include">
-            <e p="GameMenu.cs" t="Include" />
-          </e>
           <e p="GameScripts" t="Include">
             <e p="Bin.cs" t="Include" />
             <e p="Bins.cs" t="Include" />
@@ -18,6 +15,7 @@
               <e p="Achievements.cs" t="Include" />
             </e>
             <e p="Game.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
             <e p="Interfaces.cs" t="Include" />
             <e p="Spawner.cs" t="Include" />
             <e p="TransportBelt.cs" t="Include" />
@@ -25,6 +23,9 @@
               <e p="PauseMenu.cs" t="Include" />
               <e p="UserInterface.cs" t="Include" />
             </e>
+          </e>
+          <e p="Tutorials" t="Include">
+            <e p="TutorialsManager.cs" t="Include" />
           </e>
         </e>
       </e>
