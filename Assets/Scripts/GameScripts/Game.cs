@@ -1,4 +1,6 @@
-﻿using GameScripts.UI;
+﻿using System.Runtime.CompilerServices;
+using System.Runtime.Versioning;
+using GameScripts.UI;
 using UnityEngine;
 
 namespace GameScripts
@@ -34,14 +36,16 @@ namespace GameScripts
         private Vector2 deltaMouseCandy;
 
         //needed to avoid input while game is paused
-        public bool Paused { private set; get; }
+        private bool Paused { set; get; }
 
+        private static Game _instance;
+        
         // Start is called before the first frame update
         private void Awake()
         {
+            if (_instance == null)
+                _instance = this;
             mainCamera = Camera.main;
-            spawner.game = this;
-            bins.game = this;
         }
 
         private void Start()
@@ -120,6 +124,11 @@ namespace GameScripts
             transportBelt.SetupTransportBelt();
             spawner.SetupSpawner();
             bins.SetupBins();
+        }
+
+        public static Game GetInstance()
+        {
+            return _instance;
         }
     }
 }

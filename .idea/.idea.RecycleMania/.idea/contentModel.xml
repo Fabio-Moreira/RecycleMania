@@ -16,7 +16,6 @@
             </e>
             <e p="Game.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
-            <e p="Interfaces.cs" t="Include" />
             <e p="Spawner.cs" t="Include" />
             <e p="TransportBelt.cs" t="Include" />
             <e p="UI" t="Include">

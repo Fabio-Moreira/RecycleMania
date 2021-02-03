@@ -3,70 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="25d5f603-6326-432f-a217-3c9e0ef10a9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RecycleMania/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecycleMania/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RecycleMania/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecycleMania/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RecycleMania/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecycleMania/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Background.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Background.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Belt.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Belt.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Bins/Bin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Bins/Bin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Bins/BlackBin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Bins/BlackBin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/CandySprites/Candies_Jerom_CCBYSA3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/CandySprites/Candies_Jerom_CCBYSA3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Spawn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Spawn.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bins/BlackBin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bins/BlackBin.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candys/BlueCandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candys/BlueCandy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candys/CyanCandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candys/CyanCandy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candys/GreenCandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candys/GreenCandy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candys/GreyCandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candys/GreyCandy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candys/MagentaCandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candys/MagentaCandy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Candys/OrangeCandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Candys/OrangeCandy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_0.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_0.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_10.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_10.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_11.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_11.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_12.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_12.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_3.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_3.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_4.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_4.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_5.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_5.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_6.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_6.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_7.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_7.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_8.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_8.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_9.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TransportBelt/Belt_9.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AnimationScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AnimationScene.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameMenu.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameMenu.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameMenu.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameMenu/GameMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameMenu/GameMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScripts/Bin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameScripts/Bin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScripts/Bins.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameScripts/Bins.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScripts/Candy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameScripts/Candy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScripts/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameScripts/Game.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameScripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScripts/Interfaces.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScripts/Interfaces.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScripts/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameScripts/Spawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScripts/TransportBelt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameScripts/TransportBelt.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScripts/UI/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameScripts/UI/PauseMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScripts/UI/UserInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameScripts/UI/UserInterface.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +33,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameScripts/Candy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameScripts/Interfaces.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameScripts/Bins.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameScripts/TransportBelt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameScripts/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
@@ -100,17 +46,17 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Game/Candy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Game/Bin.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Game/Game.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Interfaces.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Candy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tutorials/TutorialsManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Spawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/UI/UserInterface.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/UI/PauseMenu.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Game.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/TransportBelt.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Interfaces.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Game.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Bin.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Bins.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Candy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameScripts/Spawner.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mvaPJDEotDpD7YSHidoY6jlIA6" />
@@ -144,10 +90,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="16788">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="16788" />
+      <option name="pid" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -192,7 +138,10 @@
       <workItem from="1611599117863" duration="78000" />
       <workItem from="1611599420074" duration="1958000" />
       <workItem from="1612346254388" duration="526000" />
-      <workItem from="1612346817997" duration="8906000" />
+      <workItem from="1612346817997" duration="9677000" />
+      <workItem from="1612357598695" duration="1365000" />
+      <workItem from="1612360391965" duration="622000" />
+      <workItem from="1612361340831" duration="801000" />
     </task>
     <servers />
   </component>
@@ -215,24 +164,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/GameScripts/Bins.cs</url>
-          <line>124</line>
-          <properties documentPath="C:\Users\morfa\Documents\Unity\RecycleMania\Assets\Scripts\GameScripts\Bins.cs" initialLine="123" containingFunctionPresentation="method 'SwapBins'">
-            <startOffsets>
-              <option value="3717" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3718" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

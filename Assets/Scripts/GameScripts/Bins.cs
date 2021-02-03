@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 namespace GameScripts
@@ -7,10 +6,10 @@ namespace GameScripts
     public class Bins : MonoBehaviour
     {
         [Header("Settings")] [SerializeField] [Tooltip("Start time between which bin switches happen")]
-        private float _SWITCHINTERVAL;
+        private float switchinterval;
 
         [SerializeField] [Tooltip("Step at which the time between bin switches happen decreases")]
-        private float _SWITCHINTERVALSTEP;
+        private float switchintervalstep;
 
         [Header("GameObjects")] [SerializeField] [Tooltip("Prefabs of the bins which will be instantiated at Start()")]
         private GameObject[] binsPrefabs;
@@ -32,9 +31,6 @@ namespace GameScripts
 
         //time between which bin switches happen
         private float switchInterval;
-
-        //needed to award points and remove lives
-        public Game game { set; private get; }
 
         private void Update()
         {
@@ -74,18 +70,17 @@ namespace GameScripts
                 bins[index] = Instantiate(binsPrefabs[index], Vector3.zero, Quaternion.identity);
                 bins[index].transform.parent = binsPositions[index].transform;
                 bins[index].transform.localPosition = Vector3.zero;
-                bins[index].GetComponent<Bin>().game = game;
                 
             }
 
-            switchInterval = _SWITCHINTERVAL;
-            countdownSwitch = _SWITCHINTERVAL;
+            switchInterval = switchinterval;
+            countdownSwitch = switchinterval;
         }
 
         private void DifficultyIncrease()
         {
-            if (switchInterval - _SWITCHINTERVALSTEP > 1.5f)
-                switchInterval -= _SWITCHINTERVALSTEP;
+            if (switchInterval - switchintervalstep > 1.5f)
+                switchInterval -= switchintervalstep;
         }
 
         private void InitSwap()

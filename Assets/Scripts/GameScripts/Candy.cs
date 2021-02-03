@@ -4,17 +4,17 @@ namespace GameScripts
 {
     public class Candy : MonoBehaviour
     {
-        public Game game { set; private get; }
         private Rigidbody2D rb2d;
+        public Spawner Spawner {set; private get; }
         
         private void Start()
         {
-            rb2d = this.GetComponent<Rigidbody2D>();
+            rb2d = GetComponent<Rigidbody2D>();
         }
-        
-        void Update()
+
+        private void Update()
         {
-            rb2d.velocity = new Vector3(0,game.transportBelt.GetCurrentSpeed(),0);
+            rb2d.velocity = new Vector3(0,Game.GetInstance().transportBelt.GetCurrentSpeed(),0);
         }
     }    
 }

@@ -1,25 +1,29 @@
 ﻿using UnityEngine;
 
-public class GameManager : MonoBehaviour
+namespace GameScripts
 {
-    private static GameManager instance;
-    [SerializeField, Tooltip("If tutorial is shown")]
-    private bool needTutorial;
-    void Start()
+    public class GameManager : MonoBehaviour
     {
-        if (instance == null)
-            instance = this;
-        else
-            Destroy(this);
-    }
+        private static GameManager _instance;
+        [SerializeField, Tooltip("If tutorial is shown")]
+        private bool needTutorial;
 
-    public bool getNeedTutorial()
-    {
-        return needTutorial;
-    }
+        private void Start()
+        {
+            if (_instance == null)
+                _instance = this;
+            else
+                Destroy(this);
+        }
+
+        public bool getNeedTutorial()
+        {
+            return needTutorial;
+        }
     
-    public static GameManager getInstance()
-    {
-        return instance;
+        public static GameManager getInstance()
+        {
+            return _instance;
+        }
     }
 }

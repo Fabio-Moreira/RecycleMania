@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: -400}
+  m_AnchoredPosition: {x: 440, y: -460}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &10806190
@@ -419,7 +419,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: 400}
+  m_AnchoredPosition: {x: 440, y: 460}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &295149645
@@ -492,9 +492,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1623363109}
   - {fileID: 467460893}
   - {fileID: 1433622904}
+  - {fileID: 1623363109}
   - {fileID: 911315343}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -915,7 +915,7 @@ Transform:
   m_LocalScale: {x: 1.1, y: 1.18, z: 1}
   m_Children: []
   m_Father: {fileID: 314232079}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &467460894
 SpriteRenderer:
@@ -1116,7 +1116,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: -400}
+  m_AnchoredPosition: {x: -440, y: -460}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &523453167
@@ -1670,8 +1670,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff88afffc4b53e549b79b865629f196c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _SWITCHINTERVAL: 5
-  _SWITCHINTERVALSTEP: 0.1
+  switchinterval: 6
+  switchintervalstep: 0.5
   binsPrefabs:
   - {fileID: 8931181932286527172, guid: 5f456dccda485a141ba55c4d21a397dc, type: 3}
   - {fileID: 3141327637709140880, guid: dedefee2356b8cb4bba2453d668ce2c7, type: 3}
@@ -1729,7 +1729,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: 0}
+  m_AnchoredPosition: {x: -440, y: 0}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &955494044
@@ -1952,7 +1952,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: 400}
+  m_AnchoredPosition: {x: -440, y: 460}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1206108769
@@ -2060,7 +2060,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: 0}
+  m_AnchoredPosition: {x: 440, y: 0}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1241832669
@@ -2236,8 +2236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0404736df87d5cc4e9af86939b47bb9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _SPAWNTICK: 5
-  _TICKDIFFICULTYSTEP: 0.1
+  spawntick: 5
+  tickdifficultystep: 0.2
   candyObjects:
   - {fileID: 1771322705845586570, guid: 15db9069aeb546d44950c55dfd4ea0cf, type: 3}
   - {fileID: 4280079391685246609, guid: b68de4291038c37459c9414b394775a1, type: 3}
@@ -2245,6 +2245,12 @@ MonoBehaviour:
   - {fileID: 3691666347617871773, guid: b7e6e919f3519f6449c8ce644be31d29, type: 3}
   - {fileID: 4561686576543043930, guid: e6faa09cdeb6081498a1dece66e00c91, type: 3}
   - {fileID: 8656630369576244552, guid: 7b7788158ec7a2a479f8b6cc5730b10f, type: 3}
+  - {fileID: 4274676248544984092, guid: 203b09669a1584e44ab3bc5ccf39c128, type: 3}
+  - {fileID: 4296034108459807626, guid: da7c87459005232459f0e0ade8f7ebb8, type: 3}
+  - {fileID: 3867349935679344893, guid: 02c728c56d2ee7c40ac7632670ce268e, type: 3}
+  - {fileID: 3730585045948591791, guid: 2fae19aec9062ae4e904dc458b2bab4d, type: 3}
+  - {fileID: 6572620114648672454, guid: 1a378f88ad9e9f04b9683f705eb85d33, type: 3}
+  - {fileID: 782610189015418020, guid: 7a3cc6033c9915347adb93b52fb18775, type: 3}
 --- !u!1 &1437680132
 GameObject:
   m_ObjectHideFlags: 0
@@ -2506,7 +2512,7 @@ GameObject:
   - component: {fileID: 1623363111}
   m_Layer: 0
   m_Name: TransportBelt
-  m_TagString: Untagged
+  m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2523,7 +2529,7 @@ Transform:
   m_LocalScale: {x: 0.521, y: 0.521, z: 1}
   m_Children: []
   m_Father: {fileID: 314232079}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1623363110
 SpriteRenderer:
@@ -2587,20 +2593,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc26bd8faf6c72340ad39795672f2f7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transportBeltPrefab:
-  - {fileID: 4115812831390872381, guid: a8113bdb7a19820429144bf26c189b08, type: 3}
-  - {fileID: 7852836644109195964, guid: 3d8fd41fe0c134a4f9bd664896fe0f44, type: 3}
-  - {fileID: 3338002678647368714, guid: baf74fc5d7ca98941b51a29be12d0601, type: 3}
-  - {fileID: 6827686534411814987, guid: 04715178acc51574da2905ef38fa16bf, type: 3}
-  - {fileID: 4991135452326012597, guid: 3fd7d8df301ef364e92643c471bcdccd, type: 3}
-  - {fileID: 8651370318832421049, guid: 84cbf0763614eff41a7e57f781f2fa37, type: 3}
-  - {fileID: 7851310690391825296, guid: 24bc265d2c5c9fb4fbfb659bd104a8f3, type: 3}
-  - {fileID: 4260559453500841692, guid: 904d380ac999aeb4eab559ed8be41ee5, type: 3}
-  - {fileID: 5934008086905614172, guid: a3cb12c09b8bfe74899c8a37a3d8901b, type: 3}
-  - {fileID: 4638832477628513387, guid: 3fa849d71269f1f439b1ed7b31059ea9, type: 3}
-  - {fileID: 8543892702486470509, guid: 1d342f27f31c6ab4aafee3c9ccb6b7ed, type: 3}
-  - {fileID: 7448658780905029471, guid: 109c22dc95db37241bfc622d3de530ab, type: 3}
-  - {fileID: 1035914509128464747, guid: d7fbcfba58ad0ce4e95afafc717fc7fc, type: 3}
+  transportBeltPrefab: {fileID: 1035914509128464747, guid: d7fbcfba58ad0ce4e95afafc717fc7fc,
+    type: 3}
+  beltSprites:
+  - {fileID: 7576011095104966051, guid: 412b85dfd602cc047aca7b9ac62fb2a1, type: 3}
+  - {fileID: -5987639837361802967, guid: 412b85dfd602cc047aca7b9ac62fb2a1, type: 3}
+  - {fileID: 8816220487074538770, guid: 412b85dfd602cc047aca7b9ac62fb2a1, type: 3}
+  - {fileID: 2039626281802277640, guid: 412b85dfd602cc047aca7b9ac62fb2a1, type: 3}
+  - {fileID: -7028986135446817494, guid: 412b85dfd602cc047aca7b9ac62fb2a1, type: 3}
+  - {fileID: 1734430025835730700, guid: 412b85dfd602cc047aca7b9ac62fb2a1, type: 3}
+  - {fileID: -762874548624235858, guid: 412b85dfd602cc047aca7b9ac62fb2a1, type: 3}
+  - {fileID: -918475755900529025, guid: 412b85dfd602cc047aca7b9ac62fb2a1, type: 3}
+  - {fileID: -2111576588315356699, guid: 412b85dfd602cc047aca7b9ac62fb2a1, type: 3}
+  - {fileID: 1817910802524861797, guid: 412b85dfd602cc047aca7b9ac62fb2a1, type: 3}
+  - {fileID: -2004471007297585996, guid: 412b85dfd602cc047aca7b9ac62fb2a1, type: 3}
+  - {fileID: 320719102959907706, guid: 412b85dfd602cc047aca7b9ac62fb2a1, type: 3}
+  - {fileID: -2545052535694586942, guid: 412b85dfd602cc047aca7b9ac62fb2a1, type: 3}
   startSpeed: 2
   speedIncreaseSteps: 0.15
   speedIncreaseTick: 5
@@ -2850,7 +2858,7 @@ PrefabInstance:
     - target: {fileID: 2665871961604259100, guid: 81c7bd8e28b6d44459e0f87fb5304f93,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2665871961604259100, guid: 81c7bd8e28b6d44459e0f87fb5304f93,
         type: 3}

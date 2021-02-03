@@ -12,7 +12,7 @@ namespace GameScripts
         private Sprite[] beltSprites;
         private readonly LinkedList<Rigidbody2D> rb2dTransportBelts = new LinkedList<Rigidbody2D>();
         private readonly LinkedList<SpriteRenderer> spriteRendererTransportBelts = new LinkedList<SpriteRenderer>();
-        private int nextRandomColouredBelt=0;
+        private int nextRandomColouredBelt;
 
         
         [Header("Speed settings")] [SerializeField] [Tooltip("Speed at which candy falls at the start of the game")]
